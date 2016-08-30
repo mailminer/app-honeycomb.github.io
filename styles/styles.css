@@ -48,12 +48,17 @@ header {
         text-align: center;
         width: 200px;
         font-size: 0.7em; }
-        header .headerCenter .headerContent .downloadButton .btn {
+        header .headerCenter .headerContent .downloadButton  {
           width: 200px;
           font-size: 1.4em;
           color: white;
-          background: #8EC305; }
-
+         }
+	.btn {
+		 background: #98CA15; 
+	}
+	.btn:hover {
+		background-color
+	}
 .importantCDSection {
   margin: 100px 0; }
   .importantCDSection .WhyBackgroundRelative {
