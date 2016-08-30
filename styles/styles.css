@@ -54,7 +54,7 @@ header {
           color: white;
          }
 	.btn {
-		 background: #98CA15; 
+		 background-color: #98CA15; 
 	}
 	.btn:hover {
 		background-color:#A4D428;
