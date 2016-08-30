@@ -32,7 +32,10 @@
         <script src="jquery.scrolldepth.min.js"></script>
         <script>
             jQuery(function() {
-              jQuery.scrollDepth();
+              jQuery.scrollDepth({
+                  elements: ['header', '#smartSort', '#testimonials', '#footer-download '],
+                  percentage: false,
+              });
             });
         </script>
 
@@ -93,7 +96,7 @@
 			</div>
 		</section>
 
-		<section class="smartSortSection">
+		<section id="smartSort" class="smartSortSection">
 			<div class="container">
 				<div class="row">
 
@@ -188,7 +191,7 @@
 		</section>
 
 
-		<section class="testimonialsSection">
+		<section id="testimonials" class="testimonialsSection">
 			<div class="container">
 
 				<div class="row">
@@ -318,7 +321,7 @@
 									<p> For Mac OS 10.9+ 45MB</p>
 								</div>
 
-								<div class="downloadButton text-center visible-xs">
+								<div id="footer-download" class="downloadButton text-center visible-xs">
 									<p>Probably you watching our page from mobile</p>
 									<p>We can send you download link to your email</p>
 									<p class="lead">
@@ -338,7 +341,7 @@
 
 		<footer>
 			<div></div>
-		</footer>
+		</foote   r>
 
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
