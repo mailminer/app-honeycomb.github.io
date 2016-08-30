@@ -48,7 +48,7 @@ header {
         text-align: center;
         width: 200px;
         font-size: 0.7em; }
-        header .headerCenter .headerContent .downloadButton  {
+        header .headerCenter .headerContent .downloadButton .btn {
           width: 200px;
           font-size: 1.4em;
           color: white;
