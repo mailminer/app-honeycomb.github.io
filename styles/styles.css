@@ -52,10 +52,8 @@ header {
           width: 200px;
           font-size: 1.4em;
           color: white;
+           background-color: #98CA15;
          }
-	.btn {
-		 background-color: #98CA15; 
-	}
 	.btn:hover {
 		background-color:#A4D428;
 	}
