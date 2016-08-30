@@ -53,9 +53,7 @@ header {
           font-size: 1.4em;
           color: white;
           background: #8EC305; }
-          header .headerCenter .headerContent .downloadButton .btn :hover {
-          background-color:red; }
-
+}
 .importantCDSection {
   margin: 100px 0; }
   .importantCDSection .WhyBackgroundRelative {
