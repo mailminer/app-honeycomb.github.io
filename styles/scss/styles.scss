@@ -33,20 +33,29 @@ html, body{
 	font-family: Lato;
 }
 
+/*html * {
+	border: 1px solid red;
+}*/
+
 header {
 	width: 100%;
 	height: 70vh;
 	background-image: url(../images/imac.png);
 	background-size: contain;
-	@include background;
+	background-repeat: no-repeat;
+	overflow: hidden;
 	background-position: 100% 50%;
 
-	//@media (min-width: 1200px) {
-		//background-size: 50%;
-	//}
+	@media (min-width: 1200px) {
+		height: 100vh;
+	}
 
 	@include xs {
-		box-shadow:0 0 0 300em rgba(0, 0, 0, 0.6) inset;
+		box-shadow:0 0 300em 300em rgba(35, 33, 60, 0.6) inset;
+		display: flex;
+		@include center;
+
+		background-position: top right;
 	}
 
 	.container {
@@ -59,24 +68,9 @@ header {
 		align-items: center;
 
 		.headerContent {
-		
 			display: flex;
 			flex-direction: column;
 			margin-left: 40px;
-
-			@include sm {
-				margin-left: 0;
-
-				h1 {
-					font-size: 2em;
-				}
-
-				p.lead {
-					font-size: 1em;
-				}
-			}
-
-			//@include sm
 
 			h1 {
 				line-height: 1.4em;
@@ -84,16 +78,16 @@ header {
 			}
 
 			p {
-				color: #9c9ca2;
-				font-size: 1.3em;
+				font-size: 18px;
+				color: black;
 			}
 
 			p.lead {
 				margin: 20px 0;
 			}
+
 			.headerImg {
 				width: 88px;
-				//margin: 0;
 			}
 
 			.downloadButton {
@@ -108,12 +102,107 @@ header {
 					background: #8EC305;
 				}
 			}
+
+			.forMac {
+				font-size: 14px;
+			}
+
+			@include sm {
+				margin-left: 0;
+
+				h1 {
+					font-size: 2em;
+				}
+
+				p.lead {
+					font-size: 1em;
+				}
+			}
+
+			@include xs {
+				display: flex;
+				@include center;
+				text-align: center;
+
+				p.lead, h1, p {
+					color: white;
+				}
+
+				.downloadButtonMb {
+					text-align: center;
+					font-size: 0.7em;
+
+					.btn {
+						width: 250px;
+						font-size: 0.8em;
+						color: white;
+						background: #8EC305;
+					}
+				}
+
+				.headerH1 {
+					font-size: 38px;
+				}
+
+				p.lead {
+					font-size: 28px;
+				}
+
+				.mobileText {
+					font-size: 14px;
+				}
+
+				.forMac {
+					font-size: 14px;
+					font-weight: lighter;
+				}
+
+				@media (max-width: 614px){
+					.headerH1 {
+						font-size: 40px;
+						margin: 0;
+					}
+
+					p.lead {
+						margin-top: 10px;
+					}
+				}
+
+				@media (max-width: 517px){
+					.headerH1 {
+						font-size: 30px;
+					}
+
+					p.lead {
+						font-size: 20px; 
+					}
+
+					.downloadButtonMb {
+						padding-top: 30px;
+					}
+
+					.mobileText {
+						font-size: 12px;
+					}
+				}
+
+				@media (max-width: 400px){
+					p.lead {
+						margin: 5px 0;
+					}
+				}
+			}
 		}
 	}
 }
 
+.-slide-active {
+	color: #000;
+}
+
 .importantCDSection {
 	margin: 100px 0;
+
 	.WhyBackgroundRelative {
 		position: relative;
 
@@ -132,17 +221,24 @@ header {
 		flex-direction: column;
 
 		.importantCDCol {
-			width: 60%;
+			width: 65%;
 
 			p {
 				margin: 30px 0;
-				color: #9c9ca2;
-				//font-weight: lighter;
+				color: black;
+				font-size: 16px;
+				font-weight: 300;
+				line-height: 1.5em;
 			}
 
 			.icons {
-				width: 30px;
-				margin: 0 15px;
+				background: url(../images/icons.svg);
+				background-repeat: no-repeat;
+				width: 35px;
+				height: 35px;
+				background-size: 1000%;
+				display: inline-block;
+				margin-right: 15px;
 			}
 		}
 	}
@@ -150,41 +246,13 @@ header {
 
 .smartSortSection {
 	background: #F1992A;
-	height: 320px;
 	margin-top: 200px;
 	color: white;
-
-	@include md {
-		height: 250px;
-	}
-	@include sm {
-		height: 200px;
-	}
-
-	@include xs {
-		//height:  $media;//700 - (1/$media*100000);
-	}
-
-	/*@media (min-width: 700px), @media (min-width: 600px), @media (min-width: 500px), @media (min-width: 400px) {
-		height: 700 - (1/$media*100000);
-	}*/
-
-	@include xs {
-		.smartSortContentCol{
-			padding-top: 450px;
-		}
-	}
-
-	@include xs {
-		.smartSortContentCol{
-			padding-top: 450px;
-		}
-	}
+	padding-bottom: 80px; 
 
 	@media (min-width: 1200px) {
 		.smartSortContentCol {
-			//margin-top: 80px;
-			margin-left: 5em;
+			padding: 30px; 
 		}
 	}
 
@@ -201,12 +269,12 @@ header {
 		display: inline-block;
 		padding: 0;
 		width: 105%;
-		margin-top: -60px;    
+		margin-top: -80px;    
 		background-image: linear-gradient(to bottom, rgba(185, 183, 178, 0.08), rgba(132, 128, 123, 0.08));
 		background: #F1992A;
 
-		@include sm {
-			margin-top: -45px;
+		@include xs {
+			margin-top: -40px;
 		}
 	}
 
@@ -214,13 +282,14 @@ header {
 		position: relative;
 
 		h2 {
-			margin: 1em 0 0 0;
+			@include xs {
+				padding-left: 35px;
+			}
 		}
 
 		p {
 			line-height: 1.7em;
 			font-weight: lighter;
-			margin-top: 3em;
 			font-size: 1.2em;
 
 			@include md {
@@ -230,6 +299,10 @@ header {
 			@include sm {
 				line-height: 1em;
 				font-size: 1em;
+			}
+
+			@include xs {
+				padding: 0 35px;
 			}
 		}
 	}
@@ -242,6 +315,11 @@ header {
 			@include sm {
 				left: 0;
 				top: -80px;
+			}
+
+			@include xs {
+				position: relative;
+				top: 0;
 			}
 	}
 }
@@ -295,6 +373,15 @@ header {
 	.featuresCenter {
 		display: flex;
 		@include center;
+
+		.icons {
+			background: url(../images/icons.svg);
+			background-repeat: no-repeat;
+			width: 60px;
+			height: 70px;
+			background-size: 850%;
+			display: inline-block;
+		}
 	}
 
 	/*&:after {
@@ -317,7 +404,11 @@ header {
 }
 
 .testimonialsSection {
-	margin: 0px 0 200px;
+	margin: 0 0 100px 0;
+
+	@include sm {
+		margin: 0;
+	}
 
 	.testimonialsRow {
 		position: relative;
@@ -372,6 +463,12 @@ header {
 	}
 
 	.testimonials {
+		padding-top: 23px;
+
+		@include md {
+			padding-top: 17px;
+		}
+
 		.slick-current {
 			width: 5em;
 			height: 15em;
@@ -381,23 +478,27 @@ header {
 		}
 
 		.testimonial {
-			height: 413px!important;
+			height: 380px!important;
 			background-size: cover;
+			//background-position: 0% 0%!important;
 
 			@include md {
-				height: 313px!important;
+				height: 280px!important;
 				background-size: cover; 
 			}
 
 			.cleanDesktopImg {
-				width: 50%;
+				width: 51%;
 				position:relative; /*add position values - fixing "clean desktop" images. Also add @include md and comment @include sm and xs*/
 				right:1%;
-				top:0.6%;
+				top:-10px;
+
+			//padding-top: -30px!important;
 
 				@include md {
 					width:46.2%;
-					top:0.8%;
+					top:2px;
+					right: 6px;
 				}
 			}
 		}
@@ -506,6 +607,20 @@ header {
 			}
 		}
 	}
+
+	.macAndDeskFormobile {
+		background: url(../images/macAndDesk.png);
+		background-size: contain;
+		@include background;
+		width: 100%;
+		position: relative;
+		height: 100%;
+		margin: -200px 0 -300px 0;
+
+		@include xs {
+			margin: -350px 0 -300px 0;
+		}
+	}
 }
 
 .downloadSection {
@@ -524,10 +639,23 @@ header {
 
 	.downloadContentCol {
 		margin: 40px 0 20px 0;
+
+		.icons {
+			background: url(../images/icons.svg);
+			background-repeat: no-repeat;
+			width: 60px;
+			height: 70px;
+			background-size: 850%;
+			display: inline-block;
+		}
 	}
 
 	.downloadIMG {
 		width: 50px;
+	}
+
+	.downloadCenter {
+		margin: 50px 0;
 	}
 
 	/*&:before {
@@ -550,5 +678,14 @@ header {
 }
 
 footer {
-	height: 100px;
+	background: #251e3d;
+	color: white;
+	padding: 30px 0;
+
+	@include xs {
+		.honeycombCopy {
+			font-size: 1.4em;
+		}
+	}
+
 }
