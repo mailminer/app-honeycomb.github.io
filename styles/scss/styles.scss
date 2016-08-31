@@ -50,11 +50,14 @@ header {
 		height: 100vh;
 	}
 
+	@media (max-height: 620px) {
+		height: 100vh;
+	}
+
 	@include xs {
 		box-shadow:0 0 300em 300em rgba(35, 33, 60, 0.6) inset;
 		display: flex;
 		@include center;
-
 		background-position: top right;
 	}
 
@@ -70,8 +73,16 @@ header {
 		.headerContent {
 			display: flex;
 			flex-direction: column;
-			margin-left: 40px;
+			@media (min-width: 768px){
+				margin-left: 80px;
 
+				@media (min-width: 768px){
+					.headerH1 {
+						font-size: 18px;
+					}
+				}
+			}
+				
 			h1 {
 				line-height: 1.4em;
 				font-weight: bold;
@@ -88,6 +99,10 @@ header {
 
 			.headerImg {
 				width: 88px;
+
+				@media (max-height: 450px){
+					width: 32px;
+				}
 			}
 
 			.downloadButton {
@@ -189,6 +204,32 @@ header {
 				@media (max-width: 400px){
 					p.lead {
 						margin: 5px 0;
+					}
+				}
+
+				@media (max-height: 630px){
+					.headerH1 {
+						font-size: 18px;
+					}
+
+					p.lead {
+						font-size: 16px;
+					}
+				}
+
+				@media (max-height: 550px){
+					p.lead {
+						margin: 0;
+					}
+
+					.downloadButtonMb {
+						padding: 0!important;
+					}
+				}
+
+				@media (max-height: 360px){
+					.headerH1 {
+						margin: 0;
 					}
 				}
 			}
@@ -407,7 +448,7 @@ header {
 	margin: 0 0 100px 0;
 
 	@include sm {
-		margin: 0;
+		//margin: 0;
 	}
 
 	.testimonialsRow {
@@ -433,6 +474,10 @@ header {
 
 	.testimonials-sync {
 
+		span {
+			color: #f8a000;
+		}
+
 		.slick-slide {
 			width: 250px;
 			height: 250px;
@@ -444,12 +489,17 @@ header {
 			align-items: baseline;
 			outline: none;
 			cursor: pointer;
+			//border: 1px solid black;
+			//border-radius: 15px;
+			//box-shadow: 0px 0px 29px -4px rgba(0,0,0,1);
 
 			b {
 				color: black;
 				display: flex;
 				align-items: baseline;
 				@include center; 
+				padding: 20px 0 -20px 0;
+				margin: 0 0 -30px 0;
 			}
 
 			p:hover {
@@ -506,11 +556,36 @@ header {
 
 	#arrowsDiv {
 
-		display: flex;
-		@include center;
-		margin-top: 3em;
+		margin: 1em 0 0 0;
+		//background: red;
 
-		.slick-arrow {
+		.slick-prev {
+			background-image: url(../images/left.png);
+			background-repeat: no-repeat;
+			width: 100px;
+			background-position: 0 0;
+			background-color: white;
+			border: none;
+			outline: none;
+			text-transform: uppercase;
+			//background-color: red;
+		}
+
+		.slick-next {
+			background-image: url(../images/right.png);
+			background-repeat: no-repeat;
+			width: 100px;
+			background-position: 75 0;
+			background-color: white;
+			border: none;
+			outline: none;
+			text-transform: uppercase;
+		}
+
+		.slick-prev:hover, .slick-next:hover {
+			color: #f8a000;
+		}
+		/*.slick-arrow {
 			border-radius: 100%;
 			width: 30px;
 			height: 30px;
@@ -605,7 +680,7 @@ header {
 			@media (max-width: 470px) {
 				width: 90px;
 			}
-		}
+		}*/
 	}
 
 	.macAndDeskFormobile {
@@ -614,11 +689,11 @@ header {
 		@include background;
 		width: 100%;
 		position: relative;
-		height: 100%;
-		margin: -200px 0 -300px 0;
+		height: 300px;
+		//margin: -200px 0 -300px 0;
 
 		@include xs {
-			margin: -350px 0 -300px 0;
+			//margin: -350px 0 -300px 0;
 		}
 	}
 }
