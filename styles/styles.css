@@ -17,7 +17,7 @@ header {
   background-repeat: no-repeat;
   overflow: hidden;
   background-position: 100% 50%; }
-  @media (min-width: 1200px) {
+  @media (min-width: 1500px) {
     header {
       height: 100vh; } }
   @media (max-height: 620px) {
@@ -42,9 +42,6 @@ header {
       @media (min-width: 768px) {
         header .headerCenter .headerContent {
           margin-left: 80px; } }
-  @media (min-width: 768px) and (min-width: 768px) {
-    header .headerCenter .headerContent .headerH1 {
-      font-size: 18px; } }
       header .headerCenter .headerContent h1 {
         line-height: 1.4em;
         font-weight: bold; }
@@ -176,6 +173,9 @@ header {
   @media (min-width: 1200px) {
     .smartSortSection .smartSortContentCol {
       padding: 30px; } }
+  @media only screen and (max-width: 765px) {
+    .smartSortSection .smartSortP {
+      font-weight: normal; } }
   .smartSortSection:before {
     height: 200px;
     z-index: -3;

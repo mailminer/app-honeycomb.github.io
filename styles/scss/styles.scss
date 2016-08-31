@@ -46,7 +46,7 @@ header {
 	overflow: hidden;
 	background-position: 100% 50%;
 
-	@media (min-width: 1200px) {
+	@media (min-width: 1500px) {
 		height: 100vh;
 	}
 
@@ -76,11 +76,11 @@ header {
 			@media (min-width: 768px){
 				margin-left: 80px;
 
-				@media (min-width: 768px){
-					.headerH1 {
-						font-size: 18px;
-					}
-				}
+				// @media (min-width: 768px){
+				// 	.headerH1 {
+				// 		font-size: 18px;
+				// 	}
+				// }
 			}
 				
 			h1 {
@@ -294,6 +294,12 @@ header {
 	@media (min-width: 1200px) {
 		.smartSortContentCol {
 			padding: 30px; 
+		}
+	}
+
+	@include xs {
+		.smartSortP {
+			font-weight: normal;
 		}
 	}
 
