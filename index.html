@@ -58,23 +58,26 @@ p=e.getElementsByTagName(a)[0];p.parentNode.insertBefore(m,p);
 		<header>
 			<div class="container">
 				<div class="headerCenter">
-					<div class="headerContent">
+					<div class="headerContent" itemscope itemtype="http://schema.org/SoftwareApplication">
+						<link itemprop="applicationCategory" href="http://schema.org/SoftwareApplication"/>
 						<img class="headerImg" alt="Honeycomb" src="./images/logo.png">
-						<h1 class="headerH1">Honeycomb - best one click <br> desk organizer</h1>
+						<h1 class="headerH1"><p itemprop="name">Honeycomb</p> - <p itemprop='description'>Free one click <br> desktop organizer</p></h1>
+                       				<meta itemprop="operatingSystem" content="OSX 10.9+"/>
 						<!--h2 class="headerH2"></h2-->
-						<p class="lead">Don’t waste time sorting files <br> while you could be up to more important things.</p>
-						<div class="downloadButton hidden-xs">
+                        			<p class="lead">Don’t waste time sorting files <br> while you could be up to more important things.</p>
+						<div class="downloadButton hidden-xs" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
 							<p class="lead">
-								<a href="https://dl.devmate.com/com.macpawlabs.honeycomb/1/1472651685/Honeycomb-1.zip" class="btn">Free Download</a>
+								<a  href="https://dl.devmate.com/com.macpawlabs.honeycomb/1/1472651685/Honeycomb-1.zip" class="btn">Free Download</a>
 							</p>
-							<p class="forMac"> For Mac OS 10.9+ 10.5MB</p>
+								<meta itemprop='price' content='0'  />
+							<p class="forMac"> For Mac OS 10.9+ 10.5MB</p>						     						
+							<meta itemprop="priceCurrency" content="USD" />
 						</div>
-
 						<div class="downloadButtonMb visible-xs">
 							<p class="mobileText">You're probably viewing our page from a mobile device</p>
 							<p class="mobileText">We can send you the download link by email</p>
 							<p class="lead">
-								<a href="https://dl.devmate.com/com.macpawlabs.honeycomb/1/1472651685/Honeycomb-1.zip" class="btn">Get download link</a>
+ 								<a  href="https://dl.devmate.com/com.macpawlabs.honeycomb/1/1472651685/Honeycomb-1.zip" class="btn">Get download link</a>
 							</p>
 							<p class="forMac"> For Mac OS 10.9+ 10.5MB</p>
 						</div>
