@@ -202,7 +202,7 @@ header {
         padding-left: 35px; } }
     .smartSortSection .smartSortContentCol p {
       line-height: 1.7em;
-      font-weight: lighter;
+      font-weight: 300;
       font-size: 1.2em; }
       @media only screen and (max-width: 1199px) {
         .smartSortSection .smartSortContentCol p {
