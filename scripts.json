@@ -1,0 +1,97 @@
+[
+  {
+    "title": "Honeycomb-BEST”,
+    "id": 1,
+    "description": "Quickly organize your desktop",
+    "image": "honeycombMini",
+    "type": "sh",
+    "color": "#1E7DE3",
+    "isManual": true,
+    "script": "IyEvYmluL2Jhc2gNCg0Kb3BlbiAtYSBIb25leWNvbWI=",
+    "arguments": []
+  },
+  {
+    "title": "Resize images",
+    "id": 2,
+    "description": "Resize bunch of images in specified folder",
+    "image": "resizerIcon",
+    "type": "sh",
+    "color": "#9233CA",
+    "isManual": true,
+    "script": "IyEvYmluL2Jhc2gNCg0KRk9MREVSPSQxDQpCQVNFTkFNRT0kKGJhc2VuYW1lICRGT0xERVIpDQpESVJOQU1FPSQoZGlybmFtZSAkRk9MREVSKQ0KDQpTTUFMTD0iX3NtYWxsIg0KTkVXX0ZPTERFUj0kQkFTRU5BTUUNCkNPTVBPU0VEPSRORVdfRk9MREVSJFNNQUxMDQoNCg0KY3AgLXIgJEZPTERFUiAkRElSTkFNRS8kQ09NUE9TRUQNCg0KZm9yIGltYWdlIGluICRESVJOQU1FLyRDT01QT1NFRC8qOyBkbw0KCSNERVNDQUxFDQoNCglXSURUSD0kKHNpcHMgLWcgcGl4ZWxXaWR0aCAiJGltYWdlInxncmVwIHBpeGVsV2lkdGh8YXdrICd7cHJpbnQgJDIvNH0nKQ0KCUhFSUdIVD0kKHNpcHMgLWcgcGl4ZWxIZWlnaHQgIiRpbWFnZSJ8Z3JlcCBwaXhlbEhlaWdodHxhd2sgJ3twcmludCAkMi80fScpDQoJc2lwcyAtLXJlc2FtcGxlSGVpZ2h0V2lkdGggJFdJRFRIICRIRUlHSFQgIiRpbWFnZSIgLS1vdXQgIiRpbWFnZSINCg0KCSNVUFNDQUxFDQoJTkVXX1dJRFRIPSQoc2lwcyAtZyBwaXhlbFdpZHRoICIkaW1hZ2UifGdyZXAgcGl4ZWxXaWR0aHxhd2sgJ3twcmludCAkMio0fScpDQoJTkVXX0hFSUdIVD0kKHNpcHMgLWcgcGl4ZWxIZWlnaHQgIiRpbWFnZSJ8Z3JlcCBwaXhlbEhlaWdodHxhd2sgJ3twcmludCAkMio0fScpDQoJc2lwcyAtLXJlc2FtcGxlSGVpZ2h0V2lkdGggJE5FV19XSURUSCAkTkVXX0hFSUdIVCAiJGltYWdlIiAtLW91dCAiJGltYWdlIg0KZG9uZQ==",
+    "arguments": [
+      {
+        "name": "Folder",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "title": "Close them all",
+    "id": 3,
+    "description": "Quit all running apps",
+    "image": "closeThemIcon",
+    "type": "osascript",
+    "color": "#ED7120",
+    "isManual": true,
+    "script": "dGVsbCBhcHBsaWNhdGlvbiAiU3lzdGVtIEV2ZW50cyIgdG8gc2V0IHRoZSB2aXNpYmxlIG9mIGV2ZXJ5IHByb2Nlc3MgdG8gdHJ1ZQ0KDQpzZXQgd2hpdGVfbGlzdCB0byB7IkZpbmRlciIsICJDZW50aSIsICJUZXJtaW5hbCIsICJQb3dlclVzZXIiLCAiaVRlcm0iLCAiaVRlcm0yIn0NCg0KdHJ5DQoJdGVsbCBhcHBsaWNhdGlvbiAiRmluZGVyIg0KCQlzZXQgcHJvY2Vzc19saXN0IHRvIHRoZSBuYW1lIG9mIGV2ZXJ5IHByb2Nlc3Mgd2hvc2UgdmlzaWJsZSBpcyB0cnVlDQoJZW5kIHRlbGwNCglyZXBlYXQgd2l0aCBpIGZyb20gMSB0byAobnVtYmVyIG9mIGl0ZW1zIGluIHByb2Nlc3NfbGlzdCkNCgkJc2V0IHRoaXNfcHJvY2VzcyB0byBpdGVtIGkgb2YgdGhlIHByb2Nlc3NfbGlzdA0KCQlpZiB0aGlzX3Byb2Nlc3MgaXMgbm90IGluIHdoaXRlX2xpc3QgdGhlbg0KCQkJdGVsbCBhcHBsaWNhdGlvbiB0aGlzX3Byb2Nlc3MNCgkJCQlxdWl0DQoJCQllbmQgdGVsbA0KCQllbmQgaWYNCgllbmQgcmVwZWF0DQpvbiBlcnJvcg0KCXRlbGwgdGhlIGN1cnJlbnQgYXBwbGljYXRpb24gdG8gZGlzcGxheSBkaWFsb2cgIkFuIGVycm9yIGhhcyBvY2N1cnJlZCEiICYgcmV0dXJuICYgIlRoaXMgc2NyaXB0IHdpbGwgbm93IHF1aXQiIGJ1dHRvbnMgeyJRdWl0In0gZGVmYXVsdCBidXR0b24gMSB3aXRoIGljb24gMA0KZW5kIHRyeQ==",
+    "arguments": []
+  },
+  {
+    "title": "Icon Maker",
+    "id": 4,
+    "description": "Create icons of all sizes from 16px to 1024px",
+    "image": "iconMakerIcon",
+    "type": "sh",
+    "color": "#D53476",
+    "isManual": true,
+    "script": "IyEvYmluL2Jhc2gNCg0KZmlsZT0kMQ0KbWtkaXIgfi9EZXNrdG9wL2ljb25zRm9sZGVyDQppY29uc0ZvbGRlcj1+L0Rlc2t0b3AvaWNvbnNGb2xkZXINCg0Kc2lwcyAtLXJlc2FtcGxlSGVpZ2h0V2lkdGggMTYgMTYgIiR7ZmlsZX0iIC0tb3V0ICIke2ljb25zRm9sZGVyfS9pY29uXzE2eDE2LnBuZyINCnNpcHMgLS1yZXNhbXBsZUhlaWdodFdpZHRoIDMyIDMyICIke2ZpbGV9IiAtLW91dCAiJHtpY29uc0ZvbGRlcn0vaWNvbl8xNngxNkAyeC5wbmciDQpzaXBzIC0tcmVzYW1wbGVIZWlnaHRXaWR0aCAzMiAzMiAiJHtmaWxlfSIgLS1vdXQgIiR7aWNvbnNGb2xkZXJ9L2ljb25fMzJ4MzIucG5nIg0Kc2lwcyAtLXJlc2FtcGxlSGVpZ2h0V2lkdGggNjQgNjQgIiR7ZmlsZX0iIC0tb3V0ICIke2ljb25zRm9sZGVyfS9pY29uXzMyeDMyQDJ4LnBuZyINCnNpcHMgLS1yZXNhbXBsZUhlaWdodFdpZHRoIDEyOCAxMjggIiR7ZmlsZX0iIC0tb3V0ICIke2ljb25zRm9sZGVyfS9pY29uXzEyOHgxMjgucG5nIg0Kc2lwcyAtLXJlc2FtcGxlSGVpZ2h0V2lkdGggMjU2IDI1NiAiJHtmaWxlfSIgLS1vdXQgIiR7aWNvbnNGb2xkZXJ9L2ljb25fMTI4eDEyOEAyeC5wbmciDQpzaXBzIC0tcmVzYW1wbGVIZWlnaHRXaWR0aCAyNTYgMjU2ICIke2ZpbGV9IiAtLW91dCAiJHtpY29uc0ZvbGRlcn0vaWNvbl8yNTZ4MjU2LnBuZyINCnNpcHMgLS1yZXNhbXBsZUhlaWdodFdpZHRoIDUxMiA1MTIgIiR7ZmlsZX0iIC0tb3V0ICIke2ljb25zRm9sZGVyfS9pY29uXzI1NngyNTZAMngucG5nIg0Kc2lwcyAtLXJlc2FtcGxlSGVpZ2h0V2lkdGggNTEyIDUxMiAiJHtmaWxlfSIgLS1vdXQgIiR7aWNvbnNGb2xkZXJ9L2ljb25fNTEyeDUxMi5wbmciDQpzaXBzIC0tcmVzYW1wbGVIZWlnaHRXaWR0aCAxMDI0IDEwMjQgIiR7ZmlsZX0iIC0tb3V0ICIke2ljb25zRm9sZGVyfS9pY29uXzUxMng1MTJAMngucG5nIg==",
+    "arguments": [
+      {
+        "name": "Image",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "title": "Screenshots Mover",
+    "id": 5,
+    "description": "Change the default destination of screenshots that you create",
+    "image": "screenshotsMoverIcon",
+    "type": "sh",
+    "color": "#28A28B",
+    "isManual": false,
+    "script": "IyEvYmluL2Jhc2gNCg0KZm9sZGVyPSQxDQpta2RpciAkZm9sZGVyDQoNCmRlZmF1bHRzIHdyaXRlIGNvbS5hcHBsZS5zY3JlZW5jYXB0dXJlIGxvY2F0aW9uICRmb2xkZXINCmtpbGxhbGwgU3lzdGVtVUlTZXJ2ZXI=",
+    "revert_script": "IyEvYmluL2Jhc2gNCg0KZGVmYXVsdHMgd3JpdGUgY29tLmFwcGxlLnNjcmVlbmNhcHR1cmUgbG9jYXRpb24gfi9EZXNrdG9wLw0Ka2lsbGFsbCBTeXN0ZW1VSVNlcnZlcg==",
+    "arguments": [
+      {
+        "name": "Folder",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "title": "Show hidden files",
+    "id": 6,
+    "description": "Enable or disable displaying of hidden files on your mac",
+    "image": "showHiddenFilesIcon",
+    "type": "sh",
+    "color": "#1E7DE3",
+    "isManual": false,
+    "script": "IyEvYmluL2Jhc2gNCg0KZGVmYXVsdHMgd3JpdGUgY29tLmFwcGxlLmZpbmRlciBBcHBsZVNob3dBbGxGaWxlcyAtYm9vbCB0cnVlDQpraWxsYWxsIEZpbmRlcg==",
+    "revert_script": "IyEvYmluL2Jhc2gNCg0KZGVmYXVsdHMgd3JpdGUgY29tLmFwcGxlLmZpbmRlciBBcHBsZVNob3dBbGxGaWxlcyAtYm9vbCBmYWxzZQ0Ka2lsbGFsbCBGaW5kZXI=",
+    "arguments": []
+  },
+  {
+    "title": "Kill MacKeeper",
+    "id": 7,
+    "description": "Easily Remover MacKeeper from your mac",
+    "image": "shitRemoverIcon",
+    "type": "osascript",
+    "color": "#28A28B",
+    "isManual": true,
+    "script": "dGVsbCBhcHBsaWNhdGlvbiAiTWFjS2VlcGVyIiB0byBxdWl0DQpkbyBzaGVsbCBzY3JpcHQgIi9iaW4vcm0gLXJmIC9BcHBsaWNhdGlvbnMvTWFjS2VlcGVyLmFwcCIgd2l0aCBhZG1pbmlzdHJhdG9yIHByaXZpbGVnZXMNCmRvIHNoZWxsIHNjcmlwdCAiL2Jpbi9ybSAtcmYgfi9MaWJyYXJ5L1ByZWZlcmVuY2VzL2NvbS5tYWNrZWVwZXIuTWFjS2VlcGVyLkhlbHBlci5wbGlzdCINCmRvIHNoZWxsIHNjcmlwdCAiL2Jpbi9ybSAtcmYgfi9MaWJyYXJ5L1ByZWZlcmVuY2VzL2NvbS5tYWNrZWVwZXIuTWFjS2VlcGVyLnBsaXN0Ig0KZG8gc2hlbGwgc2NyaXB0ICIvYmluL3JtIC1yZiB+L0xpYnJhcnkvQ2FjaGVzL2NvbS5tYWNrZWVwZXIuTWFjS2VlcGVyIg0KZG8gc2hlbGwgc2NyaXB0ICIvYmluL3JtIC1yZiB+L0xpYnJhcnkvTGF1bmNoQWdlbnRzL2NvbS5tYWNrZWVwZXIuTWFjS2VlcGVyLkhlbHBlci5wbGlzdCINCmRvIHNoZWxsIHNjcmlwdCAiL2Jpbi9ybSAtcmYgfi9MaWJyYXJ5L0xvZ3MvTWFjS2VlcGVyLmxvZyINCmRvIHNoZWxsIHNjcmlwdCAiL2Jpbi9ybSAtcmYgfi9MaWJyYXJ5L0xvZ3MvTWFjS2VlcGVyLmxvZy5zaWduZWQiDQpkbyBzaGVsbCBzY3JpcHQgIi9iaW4vcm0gLXJmICd+L0RvY3VtZW50cy9NYWNLZWVwZXIgQmFja3VwcyciDQpkbyBzaGVsbCBzY3JpcHQgIi9iaW4vcm0gLXJmICd+L0xpYnJhcnkvU2F2ZWQgQXBwbGljYXRpb24gU3RhdGUvY29tLm1hY2tlZXBlci5NYWNLZWVwZXIuc2F2ZWRTdGF0ZSci",
+    "arguments": []
+  }
+  
+]
