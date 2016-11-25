@@ -76,6 +76,10 @@ h1, h2, a, p, span {
 	font-family: 'Raleway', sans-serif;
 }
 
+html, body {
+	overflow: hidden;
+}
+
 .btn {
 	background: $orange;
 	border: none;
