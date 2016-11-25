@@ -118,6 +118,7 @@ html, body {
 
 	.not-mac-p {
 		color: $white;
+		margin-bottom:0.5em;
 	}
 
 	.btn {
@@ -164,7 +165,7 @@ html, body {
 			font-weight: 300;
 			font-size: 1.5em;
 			max-width: 28em;
-			margin:0;
+			margin:1em auto;
 		}
 
 		.btn-header {
