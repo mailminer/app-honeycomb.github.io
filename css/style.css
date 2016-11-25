@@ -125,6 +125,7 @@ html, body {
       font-family: 'Raleway','Open Sans', sans-serif;
       font-weight: 300;
       font-size: 1.5em;
+       line-height:2.5em;
       max-width: 28em;
       margin: 2em auto; }
     .header .header-center .btn-header {
