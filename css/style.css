@@ -27,7 +27,8 @@ time, mark, audio, video {
 .title-honey {
 font-family: Rissa;
 font-size:150px;
-   padding: 1em 8em;
+   color:#fff;
+   padding: 1em 4em;
 }
 
 /* HTML5 display-role reset for older browsers */
