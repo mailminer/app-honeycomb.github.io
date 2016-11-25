@@ -111,7 +111,8 @@ html, body {
         width: 6em;
         margin-right: 2em; }
       .header .nav .nav-icon-div .nav-icon-hc-text {
-        color: white; }
+        color: white; 
+         font-weight:600}
   .header .header-center {
     width: 100%;
     display: flex;
