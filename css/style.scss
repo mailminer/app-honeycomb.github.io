@@ -73,7 +73,7 @@ table {
 }
 //--------------------- end reset -------------------------------//
 h1, h2, a, p, span {
-	font-family: 'Raleway', sans-serif;
+	font-family: Raleway, sans-serif;
 }
 
 html, body {
@@ -118,6 +118,7 @@ html, body {
 
 	.not-mac-p {
 		color: $white;
+		margin-bottom:0.5em;
 	}
 
 	.btn {
@@ -160,11 +161,11 @@ html, body {
 
 		.h1 {
 			color: $white;
-			font-family: Raleway, Open Sans;
+			font-family: Raleway;
 			font-weight: 300;
 			font-size: 1.5em;
 			max-width: 28em;
-			margin: 2em auto;
+			margin:1em auto;
 		}
 
 		.btn-header {
@@ -242,7 +243,7 @@ html, body {
 	}
 
 	.why-content, .why-content > p {
-		font-family: 'Open Sans', sans-serif;
+		font-family:'Raleway, 'Open Sans', sans-serif;
 		line-height: 1.5em;
 	}
 
@@ -265,7 +266,7 @@ html, body {
 	.smart-center {
 		color: $white;
 		margin: 8em 0;
-		font-family: 'Open Sans', sans-serif;
+		font-family: 'Raleway', 'Open Sans', sans-serif;
 
 		@include sm {
 			margin: 0 0 1em 0;
@@ -293,7 +294,7 @@ html, body {
 	}
 
 	.smart-center > p {
-	  font-family: 'Open Sans', sans-serif;
+	  font-family: 'Raleway, 'Open Sans', sans-serif;
 	  line-height: 1.8em;
 	  font-weight: 300;
 	}
@@ -496,7 +497,7 @@ html, body {
 	}
 
 	.footer-center > h2, .footer-center > p {
-		font-family: 'Open Sans', sans-serif;
+		font-family: 'Raleway', 'Open Sans', sans-serif;
 		line-height: 2em;
 	}
 

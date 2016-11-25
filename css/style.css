@@ -91,7 +91,8 @@ html, body {
   justify-content: center;
   margin: 1em 0; }
   .not-mac .not-mac-p {
-    color: white; }
+    color: white;
+      margin-bottom:1em;}
   .not-mac .btn {
     margin: auto; }
 
@@ -99,7 +100,8 @@ html, body {
   background: url("http://1.bp.blogspot.com/-jb-jMvQjKJE/T02752tykYI/AAAAAAAAFHk/hoZHlGTvWXo/s1600/img1_src_5214123.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  box-shadow: -300em -300em 300em 300em rgba(0, 0, 0, 0.85) inset; }
+  box-shadow: -300em -300em 300em 300em rgba(0, 0, 0, 0.85) inset; 
+   padding-bottom:5em;}
   .header .nav {
     width: 100%; }
     .header .nav .nav-icon-div {
@@ -110,7 +112,8 @@ html, body {
         width: 6em;
         margin-right: 2em; }
       .header .nav .nav-icon-div .nav-icon-hc-text {
-        color: white; }
+        color: white; 
+         font-weight:600}
   .header .header-center {
     width: 100%;
     display: flex;
@@ -120,11 +123,12 @@ html, body {
     margin-top: 3em; }
     .header .header-center .h1 {
       color: white;
-      font-family: 'Open Sans', sans-serif;
+      font-family: 'Raleway','Open Sans', sans-serif;
       font-weight: 300;
       font-size: 1.5em;
-      max-width: 28em;
-      margin: 2em auto; }
+       line-height:2em;
+      max-width: 30em;
+      margin: 1em auto; }
     .header .header-center .btn-header {
       margin: 1em auto 5em auto !important; }
     .header .header-center .get-with-hc {
@@ -153,8 +157,7 @@ html, body {
     line-height: 1.6em; }
   .feachers .feachers-text-block > h2 {
     font-weight: 600; }
-  .feachers .smart-img {
-    width: 100%; }
+  
 
 .why-section {
   background-image: url("../img/why-bg.png");
@@ -196,7 +199,7 @@ html, body {
     position: relative; }
     .smart-section .smart-img-center img {
       position: absolute;
-      top: 60; }
+      top: 60px; }
       @media only screen and (max-width: 991px) {
         .smart-section .smart-img-center img {
           position: static;
