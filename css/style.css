@@ -26,7 +26,8 @@ time, mark, audio, video {
 @font-face { font-family: Rissa; src: url('/fonts/RissaTypeface.ttf'); } 
 .title-honey {
 font-family: Rissa;
-font-size:150px
+font-size:150px;
+   padding: 1em 8em;
 }
 
 /* HTML5 display-role reset for older browsers */
