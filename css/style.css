@@ -200,7 +200,7 @@ html, body {
     position: relative; }
     .smart-section .smart-img-center img {
       position: absolute;
-      top: 60; }
+      top: 60px; }
       @media only screen and (max-width: 991px) {
         .smart-section .smart-img-center img {
           position: static;
