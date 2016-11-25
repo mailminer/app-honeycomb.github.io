@@ -1,0 +1,489 @@
+$white: rgb(255,255,255);
+$orange: rgb(240,140,0);
+$border: rgb(228,228,228);
+
+
+@mixin md() {
+    @media only screen and (max-width: 1199px) { @content; }
+}
+
+@mixin sm() {
+    @media only screen and (max-width: 991px) { @content; }
+}
+
+@mixin xs() {
+    @media only screen and (max-width: 765px) { @content; }
+}
+
+@mixin center {
+	justify-content: center;
+	align-items: center;
+}
+
+
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+//--------------------- end reset -------------------------------//
+h1, h2, a, p, span {
+	font-family: 'Raleway', sans-serif;
+}
+
+.btn {
+	background: $orange;
+	border: none;
+	width: 15em;
+	padding: 1em 0;
+	border-radius: 30px;
+	color: $white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	img {
+		margin-left: 10px;
+	}
+}
+
+.btn:hover {
+  color: white;
+  background-color: rgb(240,121,0);
+}
+
+.vcenter {
+    display: flex;
+    align-items: center;
+}
+
+.header {
+	background: url("http://1.bp.blogspot.com/-jb-jMvQjKJE/T02752tykYI/AAAAAAAAFHk/hoZHlGTvWXo/s1600/img1_src_5214123.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	box-shadow: -300em -300em 300em 300em rgba(0, 0, 0, 0.85) inset;
+
+	.nav {
+		width: 100%;
+
+		.nav-icon-div {
+			display: flex;
+			align-items: center;
+			margin-top: 2.8em;
+
+			.nav-icon {
+				width: 6em;
+				margin-right: 2em;
+			}
+
+			.nav-icon-hc-text {
+				color: $white;
+			}			
+		}
+	}
+
+	.header-center {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-itmes: center;
+		text-align: center;
+		margin-top: 3em;
+
+		.h1 {
+			color: $white;
+			font-family: 'Open Sans', sans-serif;
+			font-weight: 300;
+			font-size: 1.5em;
+			max-width: 28em;
+			margin: 2em auto;
+		}
+
+		.btn-header {
+			margin: 1em auto 5em auto!important;   
+		}
+
+		.get-with-hc {
+			padding: 1em 8em;
+		}
+
+		a {
+			margin: auto;
+		}
+	}
+}
+
+.feachers {
+	padding: 5em 0;
+
+	.feachers-img {
+	  border-right: 1px solid $border;
+	  padding: 1em;
+	}
+
+	.feachers-img > img {
+	  width: 2em;
+	}
+
+	.feachers-blocks {
+	  display: flex;
+	  flex-direction: column;
+	}
+
+	.feachers-block {
+		display: flex;
+		align-items: center;
+	}
+
+	.feachers-text-block {
+		padding: 0 1em;
+		margin: 1.2em 0;
+	}
+
+	.feachers-text-block > p, .feachers-text-block > h2 {
+		font-family: 'Open Sans', sans-serif;
+		line-height: 1.6em;
+	}
+
+	.feachers-text-block > h2 {
+		font-weight: 600;
+	}
+}
+
+.why-section {
+	background-image: url('../img/why-bg.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 3em 0;
+
+	.why-content {
+		padding: 5em 0;
+		max-width: 95%;
+	}
+
+	.why-content, .why-content > p {
+		font-family: 'Open Sans', sans-serif;
+		line-height: 1.5em;
+	}
+
+	.why-content > h2 {
+		font-weight: 600;
+		margin: 1em 0;
+	}
+
+	.why-content > p {
+		line-height: 2em!important;
+	}
+}
+
+.smart-section {
+	background-image: url('../img/Polygon3@1x.png');
+	background-repeat: no-repeat;
+	background-size: cover;	
+	margin-bottom: 5em;
+
+	.smart-center {
+		color: $white;
+		margin: 8em 0;
+		font-family: 'Open Sans', sans-serif;
+	}
+
+	.smart-img-center {
+		position: relative;
+
+		img {
+			position: absolute;
+			top: 60;
+		}
+	}
+
+	.smart-center > h2 {
+	  font-size: 2.5em;
+	  margin-bottom: .7em;
+	}
+
+	.smart-center > p {
+	  font-family: 'Open Sans', sans-serif;
+	  line-height: 1.8em;
+	  font-weight: 300;
+	}
+}
+
+.testimonials-sync {
+  position: absolute;
+  height: 11em;
+}
+
+.testimonials-section {
+	margin: 8em 0;
+
+	.testimonials-sync {
+		.slick-track {
+		  display: flex!important;
+		  align-items: center;
+		  justify-content: center;
+		}
+
+		.slick-slide {
+			height: auto!important;
+			padding: 1em 3em;
+			outline: none;
+			text-align: center;
+			max-width: 1%;
+		}
+
+		.slick-current {
+			max-width: 1.5%!important;
+	 		font-size: 1.5em;
+
+			p {
+				font-size: 1.2em;
+			}
+		}
+	}
+
+	.container {
+	  position: relative;
+	}
+
+	.testimonialsRow {
+		position: relative;
+
+		.macbookImg {
+			position: absolute;
+			z-index: 1;
+			left: 50%;
+			margin-left: - 450px;
+			width: 900px;
+
+			@include md {
+				width: 690px;
+				margin-left: - 345px; 
+			}
+
+			@include xs {
+				width: auto;
+			}
+		}
+	}
+
+	.testimonial {
+		height: 380px!important;
+		background-size: cover;
+		//background-position: 0% 0%!important;
+
+		@include md {
+			height: 280px!important;
+			background-size: cover; 
+		}
+
+		.cleanDesktopImg {
+			width: 51%;
+			position: relative; /*add position values - fixing "clean desktop" images. Also add @include md and comment @include sm and xs*/
+			right: 1%;
+			top: -10px;
+
+		//padding-top: -30px!important;
+
+			@include md {
+				width:46.2%;
+				top:2px;
+				right: 6px;
+			}
+		}
+	}
+
+	.testimonials {
+		padding-top: 23px;
+
+		@include md {
+			padding-top: 17px;
+		}
+
+		.slick-current {
+			width: 5em;
+			height: 15em;
+			background: yellow;
+			display: flex!important;
+			@include center;
+		}
+
+		.testimonial {
+			height: 380px!important;
+			background-size: cover;
+			//background-position: 0% 0%!important;
+
+			@include md {
+				height: 280px!important;
+				background-size: cover; 
+			}
+
+			.cleanDesktopImg {
+				width: 51%;
+				position:relative; /*add position values - fixing "clean desktop" images. Also add @include md and comment @include sm and xs*/
+				right:1%;
+				top:-5px;
+
+			//padding-top: -30px!important;
+
+				@include md {
+					width:46.2%;
+					top:2px;
+					right: 6px;
+				}
+			}
+		}
+	}
+}
+
+.footer {
+	background-color: rgb(42,40,37);
+
+	.footer-icon-waves {
+		position: relative;	
+
+		img {
+			position: absolute;
+			left: 50%;
+			margin-left: -209px;
+			top: -250px;
+		}
+	}
+
+	.footer-icon-waves {
+	  width: 100%;
+	}
+
+	.footer-icon-waves > div {
+	  left: 50%;
+	  margin-left: -87px;
+	  top: -150px;
+	}
+
+	.footer-center {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		color: $white;
+		padding: 7em 0;
+	}
+
+	.footer-nav {
+		background-color: rgb(61,59,56);
+		height: 5em;
+	}
+
+	.footer-center > h2, .footer-center > p {
+		font-family: 'Open Sans', sans-serif;
+		line-height: 2em;
+	}
+
+	.btn-footer {
+		margin-top: 4em;
+	}
+}
+
+
+// .h1 {
+//   font-family: 'Open Sans', sans-serif;
+//   font-weight: 300;
+//   font-size: 1.5em;
+//   max-width: 28em;
+//   margin: 2em auto;
+// }
+
+// .header-center {
+//   margin-top: 3em;
+// }
+
+// .btn-header {
+//   margin: 1em auto 5em auto!important;   
+// }
+
+// .feachers {
+//   padding: 5em 0;
+// }
+
+// .feachers-text-block > p, .feachers-text-block > h2 {
+//   font-family: 'Open Sans', sans-serif;
+//   line-height: 1.6em;
+// }
+
+// .feachers-text-block > h2 {
+//   font-weight: 600;
+// }
+
+// .feachers-text-block {
+//   margin: 1.2em 0;
+// }
+
+// .why-content, .why-content > p {
+//   font-family: 'Open Sans', sans-serif;
+//   line-height: 1.5em;
+// }
+
+// .why-content > h2 {
+//   font-weight: 600;
+//   margin: 1em 0;
+// }
+
+// .smart-center {
+//   font-family: 'Open Sans', sans-serif;
+// }
+
+// .smart-center > h2 {
+//   font-size: 2.5em;
+//   margin-bottom: .7em;
+// }
+
+// .smart-center > p {
+//   font-family: 'Open Sans', sans-serif;
+//   line-height: 1.8em;
+//   font-weight: 300;
+// }
