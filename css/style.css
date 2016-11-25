@@ -97,7 +97,7 @@ html, body {
     margin: auto; }
 
 .header {
-  background: url("http://1.bp.blogspot.com/-jb-jMvQjKJE/T02752tykYI/AAAAAAAAFHk/hoZHlGTvWXo/s1600/img1_src_5214123.jpg");
+  background: url("/images/header.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   box-shadow: -300em -300em 300em 300em rgba(0, 0, 0, 0.85) inset; 
