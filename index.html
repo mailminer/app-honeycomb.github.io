@@ -2,11 +2,16 @@
 <html lang="en">
 
  	<head>
+		<meta property="og:title" content="Honeycomb - Free one click Desktop file organizer" />
+		<meta property="og:description" content="Don’t waste time sorting documents, photos, music and other files while you could be up to more important things" />
+		<meta property="og:url" content="https://app-honeycomb.github.io" />
+		<meta property="og:image" content="https://app-honeycomb.github.io/images/logo_f.png" />
 	    <meta charset="utf-8">
 	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	    <meta name="description" content=""> <!--...................................................................... НАПИСАТЬ ЧТО-ТО!!!!!!!!!!!! -->
-	    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
 		<title>Honeycomb: The best one-click Desktop organizer</title>
+	    <meta name="description" content="Don’t waste time sorting documents, photos, music and other files while you could be up to more important things">
+	    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+	
 	    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Raleway:300,400,600,700" rel="stylesheet">
 	    <link rel="stylesheet" href="./css/bootstrap.min.css">
 	    <link rel="stylesheet" href="./css/style.css"/>
@@ -65,15 +70,17 @@
 	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5DV52FL"
 	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<!-- End Google Tag Manager (noscript) -->
-		<header class="header">
+		<header class="header" itemscope itemtype="http://schema.org/SoftwareApplication">
+			<link itemprop="applicationCategory" href="http://schema.org/SoftwareApplication"/>
 			<div class="container">
 				<nav class="nav">
 					<div class="nav-icon-div">
-						<img class="nav-icon" src="./img/logo.png">
-						<p class="nav-icon-hc-text">Honeycomb</p>
+						<img itemprop="image" class="nav-icon" src="./img/logo.png">
+						<p itemprop="name" class="nav-icon-hc-text">Honeycomb</p>
 					</div>
 				</nav>
-
+						<meta itemprop='description' content="Free one click desktop organizer"/>
+                       				<meta itemprop="operatingSystem" content="OSX 10.9+"/>
 				<div class="header-center">
 <!-- 					<div class="header-center-content">
 						
@@ -81,7 +88,10 @@
 					
 					<p  class="hidden-sm hidden-xs title-honey">Honeycomb</p>
 					<h1 class="h1">Free one-click desktop organizer. Don't waste time sorting files while you could be up to more important things</h1>
-					<a class="btn btn-dwnl btn-header btn-mac" id="header-dwnl"><p>DOWNLOAD FOR MAC</p><img src="./img/btn-right.png"></a>
+					<a class="btn btn-dwnl btn-header btn-mac" id="header-dwnl" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+						<meta itemprop='price' content='0'  />
+						<meta itemprop="priceCurrency" content="USD" />
+						<p>DOWNLOAD FOR MAC</p><img src="./img/btn-right.png"></a>
 					<div class="not-mac">
 						<p class="not-mac-p">You probably viewing this page not from mac. We will send you email with download link</p>
 						<a class="btn btn-dwnl btn-footer"><p>Get download link</p><img src="./img/btn-right.png"></a>
