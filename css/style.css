@@ -91,7 +91,8 @@ html, body {
   justify-content: center;
   margin: 1em 0; }
   .not-mac .not-mac-p {
-    color: white; }
+    color: white;
+      margin-bottom:0.5em;}
   .not-mac .btn {
     margin: auto; }
 
@@ -127,7 +128,7 @@ html, body {
       font-size: 1.5em;
        line-height:2em;
       max-width: 30em;
-      margin: 2em auto; }
+      margin: 1em auto; }
     .header .header-center .btn-header {
       margin: 1em auto 5em auto !important; }
     .header .header-center .get-with-hc {
