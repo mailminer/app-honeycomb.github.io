@@ -279,6 +279,8 @@ html, body {
           width: 46.2%;
           top: 2px;
           right: 6px; } }
+.smart-img{
+   width:95%;}
   .testimonials-section .testimonials {
     padding-top: 23px; }
     @media only screen and (max-width: 1199px) {
