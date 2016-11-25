@@ -106,6 +106,21 @@ h1, h2, a, p, span {
     }
 }
 
+.not-mac {
+	display: none;
+	align-items: center;
+	justify-content: center;
+	margin: 1em 0;
+
+	.not-mac-p {
+		color: $white;
+	}
+
+	.btn {
+		margin: auto;
+	}
+}
+
 .header {
 	background: url("http://1.bp.blogspot.com/-jb-jMvQjKJE/T02752tykYI/AAAAAAAAFHk/hoZHlGTvWXo/s1600/img1_src_5214123.jpg");
 	background-repeat: no-repeat;
