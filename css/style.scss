@@ -100,6 +100,10 @@ h1, h2, a, p, span {
 .vcenter {
     display: flex;
     align-items: center;
+
+    @include xs {
+    	display: block;
+    }
 }
 
 .header {
@@ -193,6 +197,10 @@ h1, h2, a, p, span {
 	.feachers-text-block > h2 {
 		font-weight: 600;
 	}
+
+	.smart-img {
+		width: 100%;
+	}
 }
 
 .why-section {
@@ -201,9 +209,17 @@ h1, h2, a, p, span {
 	background-size: cover;
 	padding: 3em 0;
 
+	@include xs {
+		padding: 0;
+	}
+
 	.why-content {
 		padding: 5em 0;
 		max-width: 95%;
+
+		@include xs {
+			padding: 0 0 1em 0!important;
+		}
 	}
 
 	.why-content, .why-content > p {
@@ -231,6 +247,11 @@ h1, h2, a, p, span {
 		color: $white;
 		margin: 8em 0;
 		font-family: 'Open Sans', sans-serif;
+
+		@include sm {
+			margin: 0 0 1em 0;
+  			text-align: center;
+		}
 	}
 
 	.smart-img-center {
@@ -239,6 +260,11 @@ h1, h2, a, p, span {
 		img {
 			position: absolute;
 			top: 60;
+
+			@include sm {
+				position: static;
+				width: 100%;
+			}
 		}
 	}
 
@@ -257,10 +283,18 @@ h1, h2, a, p, span {
 .testimonials-sync {
   position: absolute;
   height: 11em;
+
+  @include xs {
+  	height: 7em;
+  }
 }
 
 .testimonials-section {
 	margin: 8em 0;
+
+	@include xs {
+		margin: 0;
+	}
 
 	.testimonials-sync {
 		.slick-track {
@@ -280,6 +314,11 @@ h1, h2, a, p, span {
 		.slick-current {
 			max-width: 1.5%!important;
 	 		font-size: 1.5em;
+
+	 		@include xs {
+				width: 1%;
+				font-size: 1em;
+			}
 
 			p {
 				font-size: 1.2em;
@@ -372,17 +411,31 @@ h1, h2, a, p, span {
 			//padding-top: -30px!important;
 
 				@include md {
-					width:46.2%;
+					width:47.2%;
 					top:2px;
-					right: 6px;
+					right: 7px;
+				}
+
+				@include sm {
+					width: 62%;
 				}
 			}
 		}
+	}
+
+	.macAndDesk-img {
+		width: 100%;
 	}
 }
 
 .footer {
 	background-color: rgb(42,40,37);
+
+	@include xs {
+		.h2-footer {
+			line-height: 1em!important;
+		}
+	}
 
 	.footer-icon-waves {
 		position: relative;	
@@ -412,6 +465,10 @@ h1, h2, a, p, span {
 		justify-content: center;
 		color: $white;
 		padding: 7em 0;
+
+		@include xs {
+			text-align: center;
+		} 
 	}
 
 	.footer-nav {

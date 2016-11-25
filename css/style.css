@@ -68,6 +68,9 @@ h1, h2, a, p, span {
 .vcenter {
   display: flex;
   align-items: center; }
+  @media only screen and (max-width: 765px) {
+    .vcenter {
+      display: block; } }
 
 .header {
   background: url("http://1.bp.blogspot.com/-jb-jMvQjKJE/T02752tykYI/AAAAAAAAFHk/hoZHlGTvWXo/s1600/img1_src_5214123.jpg");
@@ -127,15 +130,23 @@ h1, h2, a, p, span {
     line-height: 1.6em; }
   .feachers .feachers-text-block > h2 {
     font-weight: 600; }
+  .feachers .smart-img {
+    width: 100%; }
 
 .why-section {
   background-image: url("../img/why-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 3em 0; }
+  @media only screen and (max-width: 765px) {
+    .why-section {
+      padding: 0; } }
   .why-section .why-content {
     padding: 5em 0;
     max-width: 95%; }
+    @media only screen and (max-width: 765px) {
+      .why-section .why-content {
+        padding: 0 0 1em 0 !important; } }
   .why-section .why-content, .why-section .why-content > p {
     font-family: 'Open Sans', sans-serif;
     line-height: 1.5em; }
@@ -154,11 +165,19 @@ h1, h2, a, p, span {
     color: white;
     margin: 8em 0;
     font-family: 'Open Sans', sans-serif; }
+    @media only screen and (max-width: 991px) {
+      .smart-section .smart-center {
+        margin: 0 0 1em 0;
+        text-align: center; } }
   .smart-section .smart-img-center {
     position: relative; }
     .smart-section .smart-img-center img {
       position: absolute;
       top: 60; }
+      @media only screen and (max-width: 991px) {
+        .smart-section .smart-img-center img {
+          position: static;
+          width: 100%; } }
   .smart-section .smart-center > h2 {
     font-size: 2.5em;
     margin-bottom: .7em; }
@@ -170,9 +189,15 @@ h1, h2, a, p, span {
 .testimonials-sync {
   position: absolute;
   height: 11em; }
+  @media only screen and (max-width: 765px) {
+    .testimonials-sync {
+      height: 7em; } }
 
 .testimonials-section {
   margin: 8em 0; }
+  @media only screen and (max-width: 765px) {
+    .testimonials-section {
+      margin: 0; } }
   .testimonials-section .testimonials-sync .slick-track {
     display: flex !important;
     align-items: center;
@@ -186,6 +211,10 @@ h1, h2, a, p, span {
   .testimonials-section .testimonials-sync .slick-current {
     max-width: 1.5% !important;
     font-size: 1.5em; }
+    @media only screen and (max-width: 765px) {
+      .testimonials-section .testimonials-sync .slick-current {
+        width: 1%;
+        font-size: 1em; } }
     .testimonials-section .testimonials-sync .slick-current p {
       font-size: 1.2em; }
   .testimonials-section .container {
@@ -250,12 +279,20 @@ h1, h2, a, p, span {
         top: -5px; }
         @media only screen and (max-width: 1199px) {
           .testimonials-section .testimonials .testimonial .cleanDesktopImg {
-            width: 46.2%;
+            width: 47.2%;
             top: 2px;
-            right: 6px; } }
+            right: 7px; } }
+        @media only screen and (max-width: 991px) {
+          .testimonials-section .testimonials .testimonial .cleanDesktopImg {
+            width: 62%; } }
+  .testimonials-section .macAndDesk-img {
+    width: 100%; }
 
 .footer {
   background-color: #2a2825; }
+  @media only screen and (max-width: 765px) {
+    .footer .h2-footer {
+      line-height: 1em !important; } }
   .footer .footer-icon-waves {
     position: relative; }
     .footer .footer-icon-waves img {
@@ -276,6 +313,9 @@ h1, h2, a, p, span {
     justify-content: center;
     color: white;
     padding: 7em 0; }
+    @media only screen and (max-width: 765px) {
+      .footer .footer-center {
+        text-align: center; } }
   .footer .footer-nav {
     background-color: #3d3b38;
     height: 5em; }
