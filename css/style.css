@@ -99,7 +99,8 @@ html, body {
   background: url("http://1.bp.blogspot.com/-jb-jMvQjKJE/T02752tykYI/AAAAAAAAFHk/hoZHlGTvWXo/s1600/img1_src_5214123.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  box-shadow: -300em -300em 300em 300em rgba(0, 0, 0, 0.85) inset; }
+  box-shadow: -300em -300em 300em 300em rgba(0, 0, 0, 0.85) inset; 
+   padding-bottom:5em;}
   .header .nav {
     width: 100%; }
     .header .nav .nav-icon-div {
